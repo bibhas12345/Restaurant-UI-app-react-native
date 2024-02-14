@@ -3,11 +3,7 @@ import { View, Text, TouchableOpacity, Image, SafeAreaView } from 'react-native'
 import styled from 'styled-components/native';
 import img1 from './images1.png';
 import bg1 from './bg1.jpg'
-// import Ionicons from '@expo/vector-icons/Ionicons'
-// import FontAwesome from '@expo/vector-icons/FontAwesome'
-// import EvilIcons from '@expo/vector-icons/EvilIcons'
-// import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-// import { faBowlFood } from '@fortawesome/free-solid-svg-icons/faMugSaucer'
+
 
 const WelcomeContainer = styled.View`
   flex: 1;
