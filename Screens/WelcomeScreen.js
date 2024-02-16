@@ -25,19 +25,27 @@ const WelcomeButtonText = styled.Text`
 
 const WelcomeScreen = ({ navigation }) => {
   return (
-    <View className='h-full bg-red-950 flex flex-col  items-center '>
-      <SafeAreaView/>
-      <Image className=' ' source={bg1} style={{width:450, height:350, top:100, opacity:0.3, }}/>
-      <WelcomeContainer className="flex flex-col mb-16 bottom-12 ">
+    <View>
+      <View className='bg-red-500 h-16 flex flex-row'>
+        <Image style={{ height: 50, marginLeft: 34, width: 50 }} source={require('./logo.png')} />
+        <Text className='font-semibold mt-5 text-yellow-500'>Bongo Dish</Text>
+      </View>
+      <View className='h-full bg-red-500 flex flex-col  items-center '>
+        <SafeAreaView />
+        <Image className=' ' source={bg1} style={{ width: 450, height: 350, top: 50, opacity: 0.3, }} />
+        <WelcomeContainer className="flex flex-col mb-16 bottom-12 ">
 
-        <Image className='shadow-black ' source={img1} style={{ width: 300, height: 300, marginTop: 10, shadowColor:'gray' }} />
-        <Text className='text-3xl font-bold text-gray-200' style={{}}>Welcome</Text>
-        <WelcomeButton className='mt-6 rounded-tl-sm rounded-br-sm bg-orange-700 ' style={{}} onPress={() => navigation.navigate('RestaurantScreen')}>
-          <WelcomeButtonText className=''>Enter Restaurant</WelcomeButtonText>
-        </WelcomeButton>
+          <Image className='shadow-black ' source={img1} style={{ width: 300, height: 300, bottom:53, shadowColor: 'gray' }} />
+          <Text className='text-3xl font-bold text-gray-200' style={{bottom:63}}>Welcome</Text>
+          <WelcomeButton className=' rounded-tl-sm rounded-br-sm bg-red-700 ' style={{bottom:62}} onPress={() => navigation.navigate('RestaurantScreen')}>
+            <WelcomeButtonText className=''>Enter Restaurant</WelcomeButtonText>
+          </WelcomeButton>
 
-      </WelcomeContainer>
+        </WelcomeContainer>
+      </View>
     </View>
+
+
   );
 };
 

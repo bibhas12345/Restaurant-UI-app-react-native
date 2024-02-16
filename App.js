@@ -13,19 +13,19 @@ const App = () => {
       <Stack.Navigator initialRouteName="WelcomeScreen">
         <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} options={{
           headerTitle: '',
-          headerStyle: { height: 0 },
+          headerStyle: { height: 33, backgroundColor:'#D1D5DB' },
         }} />
         <Stack.Screen
           name="RestaurantScreen"
           component={RestaurantScreen}
           options={{
             headerTitle: '',
-            headerStyle: { height: 33, backgroundColor:'brown' },
+            headerStyle: { height: 33, backgroundColor:'#D1D5DB' },
           }}
         />
          <Stack.Screen name="Thali" component={Thali} options={{
           headerTitle: '',
-          headerStyle: { height: 0 },
+          headerStyle: {height: 33, backgroundColor:'#D1D5DB'},
         }} />
       </Stack.Navigator>
     </NavigationContainer>
@@ -37,4 +37,3 @@ export default App;
 
 
 
-//make an video downloadiing app using react native which include a text input where I can paste facebook, Instagram, youtube video link and there will a button download and by clicking it it should be download mp4 version that link
